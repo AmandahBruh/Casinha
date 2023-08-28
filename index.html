@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Casinha</title>
+</head>
+
+<header class="Header">CASINHA</header>
+
+<body style="background-color: #FFB7B7; margin: 0;">
+    
+    <div class="Cardzinho">
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 1</h1>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
+        <button type="button" class="Botao" onclick="ligar()">Luzes</button>
+        <button type="button" class="Botao">TV</button>
+        <button type="button" class="Botao">Computador</button>
+    </div>
+    <div class="Cardzinho">
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 2</h1>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
+        <button type="button" class="Botao">Luzes</button>
+        <button type="button" class="Botao">TV</button>
+        <button type="button" class="Botao">Computador</button>
+    </div>
+    <div class="Cardzinho">
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 3</h1>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
+        <button type="button" class="Botao">Luzes</button>
+        <button type="button" class="Botao">TV</button>
+        <button type="button" class="Botao">Computador</button>
+    </div>
+</body>
+
+<script>  
+    el_up.innerHTML = str;
+             
+    function changeColor(color) {
+        document.body.style.background = color;
+    }
+     
+    function ligar() {
+        changeColor('green');
+    }       
+</script>
+
+</html>
