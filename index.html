@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Casinha</title>
-</head>
+  </head>
 
-<header class="Header">CASINHA</header>
+  <header class="Header">CASINHA</header>
 
-<body style="background-color: #FFB7B7; margin: 0;">
-    
+  <body style="background-color: #ffb7b7; margin: 0">
     <div class="Cardzinho">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 1</h1>
-        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
-        <button type="button" class="Botao" onclick="ligar()">Luzes</button>
-        <button type="button" class="Botao">TV</button>
-        <button type="button" class="Botao">Computador</button>
+      <h1 style="font-family: Arial, Helvetica, sans-serif">Quarto 1</h1>
+      <h3 style="font-family: Arial, Helvetica, sans-serif">Temperatura:</h3>
+      <button type="button1" class="Botao" onclick="ligar1()">Luzes</button>
+      <button type="button2" class="Botao" onclick="ligar2()">TV</button>
+      <button type="button3" class="Botao" onclick="ligar3()">Computador</button>
     </div>
     <div class="Cardzinho">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 2</h1>
-        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
-        <button type="button" class="Botao">Luzes</button>
-        <button type="button" class="Botao">TV</button>
-        <button type="button" class="Botao">Computador</button>
+      <h1 style="font-family: Arial, Helvetica, sans-serif">Quarto 2</h1>
+      <h3 style="font-family: Arial, Helvetica, sans-serif">Temperatura:</h3>
+      <button type="button4" class="Botao" onclick="ligar4()">Luzes</button>
+      <button type="button5" class="Botao" onclick="ligar5()">TV</button>
+      <button type="button6" class="Botao" onclick="ligar6()">Computador</button>
     </div>
     <div class="Cardzinho">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;">Quarto 3</h1>
-        <h3 style="font-family: Arial, Helvetica, sans-serif;">Temperatura:</h3>
-        <button type="button" class="Botao">Luzes</button>
-        <button type="button" class="Botao">TV</button>
-        <button type="button" class="Botao">Computador</button>
+      <h1 style="font-family: Arial, Helvetica, sans-serif">Quarto 3</h1>
+      <h3 style="font-family: Arial, Helvetica, sans-serif">Temperatura:</h3>
+      <button type="button7" class="Botao" onclick="ligar7()">Luzes</button>
+      <button type="button8" class="Botao" onclick="ligar8()">TV</button>
+      <button type="button9" class="Botao" onclick="ligar9()">Computador</button>
     </div>
-</body>
+  </body>
 
-<script>  
-    el_up.innerHTML = str;
-             
-    function changeColor(color) {
-        document.body.style.background = color;
+  <script>
+    let btn1 = document.querySelector('button[type="button1"]');
+    function ligar1() {
+      btn1.classList.toggle("BotaoGreen");
     }
-     
-    function ligar() {
-        changeColor('green');
-    }       
-</script>
 
+    let btn2 = document.querySelector('button[type="button2"]');
+    function ligar2() {
+      btn2.classList.toggle("BotaoGreen");
+    }
+
+    let btn3 = document.querySelector('button[type="button3"]');
+    function ligar3() {
+      btn3.classList.toggle("BotaoGreen");
+    }
+
+    let btn4 = document.querySelector('button[type="button4"]');
+    function ligar4() {
+      btn4.classList.toggle("BotaoGreen");
+    }
+
+    let btn5 = document.querySelector('button[type="button5"]');
+    function ligar5() {
+      btn5.classList.toggle("BotaoGreen");
+    }
+
+    let btn6 = document.querySelector('button[type="button6"]');
+    function ligar6() {
+      btn6.classList.toggle("BotaoGreen");
+    }
+ 
+    let btn7 = document.querySelector('button[type="button7"]');
+    function ligar7() {
+      btn7.classList.toggle("BotaoGreen");
+    }
+
+    let btn8 = document.querySelector('button[type="button8"]');
+    function ligar8() {
+      btn8.classList.toggle("BotaoGreen");
+    }
+
+    let btn9 = document.querySelector('button[type="button9"]');
+    function ligar9() {
+      btn9.classList.toggle("BotaoGreen");
+    }
+
+  </script>
 </html>
